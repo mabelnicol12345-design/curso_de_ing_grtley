@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-icon">GT</span>
+            <div>
+                <strong>GESTIÓN TI</strong>
+                <small>Panel administrativo</small>
+            </div>
+        </div>
+
+        <nav>
+            <a class="active" href="#">▦ Inicio</a>
+            <a href="#">▣ Equipos</a>
+            <a href="#">▤ Usuarios</a>
+            <a href="#">▧ Reportes</a>
+            <a href="#">⚙ Configuración</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            Sistema de inventario<br>
+            Versión 1.0
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">Panel de Administración</p>
+                <h1>Resumen general</h1>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">MC</div>
+                <div>
+                    <strong>Mabel Nicoll Caceres Chique</strong>
+                    <small>Administrador</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="intro">
+            <h2>Bienvenido al sistema</h2>
+            <p>Consulta el estado y la información de los equipos registrados.</p>
+        </section>
+
+        <!-- CINCO TARJETAS -->
+        <section class="stats">
+
+            <article class="stat-card blue">
+                <div class="stat-top">
+                    <span>Total de equipos</span>
+                    <span class="stat-icon">🖥️</span>
+                </div>
+                <strong>120</strong>
+                <small>Equipos registrados</small>
+            </article>
+
+            <article class="stat-card green">
+                <div class="stat-top">
+                    <span>Equipos operativos</span>
+                    <span class="stat-icon"> ☑️</span>
+                </div>
+                <strong>95</strong>
+                <small>En buen funcionamiento</small>
+            </article>
+
+            <article class="stat-card orange">
+                <div class="stat-top">
+                    <span>En mantenimiento</span>
+                    <span class="stat-icon">🧰</span>
+                </div>
+                <strong>15</strong>
+                <small>Requieren revisión</small>
+            </article>
+
+            <article class="stat-card red">
+                <div class="stat-top">
+                    <span>Incidencias pendientes</span>
+                    <span class="stat-icon">⚠️</span>
+                </div>
+                <strong>10</strong>
+                <small>Por atender</small>
+            </article>
+
+            <!-- TARJETA MORADA DEL EXAMEN -->
+            <article class="stat-card purple">
+                <div class="stat-top">
+                    <span>Equipos Obsoletos</span>
+                    <span class="stat-icon">!</span>
+                </div>
+                <strong>8</strong>
+                <small>Necesitan renovación</small>
+            </article>
+
+        </section>
+
+        <!-- TABLA DE EQUIPOS -->
+        <section class="table-panel">
+
+            <div class="table-heading">
+                <div>
+                    <h2>Últimos equipos registrados</h2>
+                    <p>Listado de equipos del inventario</p>
+                </div>
+
+                <button type="button">+ Nuevo equipo</button>
+            </div>
+
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Equipo</th>
+                            <th>Área</th>
+                            <th>Estado</th>
+                            <th>Fecha de Ingreso</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>EQ-001</td>
+                            <td>Computadora Dell</td>
+                            <td>Administración</td>
+                            <td><span class="status operational">Operativo</span></td>
+                            <td>05/02/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>EQ-002</td>
+                            <td>Impresora HP</td>
+                            <td>Contabilidad</td>
+                            <td><span class="status maintenance">Mantenimiento</span></td>
+                            <td>12/03/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>EQ-003</td>
+                            <td>Computadora Lenovo</td>
+                            <td>Informática</td>
+                            <td><span class="status obsolete">Obsoleto</span></td>
+                            <td>18/04/2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>EQ-004</td>
+                            <td>Proyector Epson</td>
+                            <td>Secretaría</td>
+                            <td><span class="status operational">Operativo</span></td>
+                            <td>22/05/2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="note">
+                Los nombres, cantidades y fechas son datos de ejemplo.
+            </p>
+
+        </section>
+
+        <footer>
+            <span>© 2026 - Sistema de Gestión de Equipos</span>
+            <p class="autor">Mabel Nicoll  </p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
